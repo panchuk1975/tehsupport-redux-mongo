@@ -1,0 +1,43 @@
+{
+  "name": "3_teh-support",
+  "version": "1.0.0",
+  "description": "Teh stack",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \" npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/panchuk1975/tehsupport.git"
+  },
+  "keywords": [
+    "Teh",
+    "react",
+    "typescript"
+  ],
+  "author": "Vadik Panchuk <panchuk1975vadik@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/panchuk1975/tehsupport/issues"
+  },
+  "homepage": "https://github.com/panchuk1975/tehsupport#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.2.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.1",
+    "process": "^0.11.10",
+    "react-redux": "7.2.0",
+    "shortid": "^2.2.15"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "cross-env": "^7.0.0",
+    "nodemon": "^2.0.2"
+  }
+}

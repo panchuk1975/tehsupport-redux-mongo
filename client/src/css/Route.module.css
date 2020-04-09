@@ -1,0 +1,24 @@
+.liquid {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    justify-content:space-around;
+    border: 1px solid lightgrey; 
+    margin-bottom: 1px;
+    background-color: rgb(139, 160, 180);
+}
+
+.liquidTitle{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    justify-content:space-around;
+    background-color: lightgrey;
+    margin-bottom: 3px;
+}
+
+.item{
+    width: 16%;
+    margin: 2px;
+    text-align: center;
+}
