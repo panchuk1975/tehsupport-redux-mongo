@@ -1,6 +1,7 @@
 const express = require("express"); // connect exprecc
 const config = require("config"); // connect config
 const mongoose = require("mongoose"); // connect to mongoDB
+const path = require('path')
 
 const app = express(); // server - result of express
 
@@ -11,6 +12,13 @@ app.use("/api/car", require('./routes/carsRouts'));
 app.use("/api/list", require('./routes/listsRouts'));
 app.use("/api/rout", require('./routes/routesRoutes'));
 app.use("/api/liquids", require('./routes/liquidRouts'));
+//-----------Set front-end and back-end work------------//
+if (process.env.NODE_ENV === 'production'){
+    app.use('/', express.static(path.join(__dirname, 'client', 'build')))
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+    })
+}
 //--------------Authorization Rout-----------------//
 const PORT = config.get("port") || 5000;
 
