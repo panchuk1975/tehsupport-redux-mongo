@@ -1,4 +1,4 @@
-import {applyMiddleware,createStore, combineReducers,compose} from "redux";
+import {applyMiddleware, createStore, combineReducers,compose} from "redux";
 import carReduser from './carReduser';
 import liquidsReduser from './liquidsReduser';
 import thunkMiddleware from "redux-thunk";

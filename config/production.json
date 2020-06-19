@@ -1,6 +1,6 @@
 {
-   "port":"5000",
+   "port": 80,
    "jwtSecret": "Tehsupport secret key", 
    "mongoUri": "mongodb+srv://panchuk1975vadik:Natasha1978@cluster0-s6mb5.azure.mongodb.net/app?retryWrites=true&w=majority",
-   "baseUrl": "http://localhost:5000"
+   "baseUrl": "http://teh-support.website"
 }
