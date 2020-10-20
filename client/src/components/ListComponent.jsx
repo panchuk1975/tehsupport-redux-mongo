@@ -366,7 +366,7 @@ export const ListComponent = ({ car, list, listId }) => {
             value={form.timeListTotal || "0"}
             onChange={changeHandler}
           />
-          <label htmlFor="timeListTotal">Загальний час</label>
+          <label htmlFor="timeListTotal">Загальне напрацювання</label>
         </div>
         <div className={`${cardClass} input-field`}>
           <input
